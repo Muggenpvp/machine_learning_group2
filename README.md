@@ -1,1 +1,1 @@
-# machine_learning_group2
+# A Machine Learning repository for Group 2's exercises
