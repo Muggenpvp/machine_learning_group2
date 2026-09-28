@@ -1,1 +1,1 @@
-# machine_learning_group2
+# Group 2 in Machine Learning - Exercises
