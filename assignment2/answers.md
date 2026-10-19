@@ -63,3 +63,10 @@ The main cause of the problem is the class imbalance combined with the default t
 Changing the threshold from 0.5 to 0.4 noticeably improved the results.
 
 # Q7
+
+# Threshold comparison table
+
+| Threshold | Accuracy | Precision | Recall | F1    | False positives | False negatives | True positives | Predicted class 1 |
+|-----------|----------|-----------|--------|-------|-----------------|-----------------|----------------|-------------------|
+| 0.5       | 0.862    | 0.516     | 0.158  | 0.242 | 1045            | 5953            | 1116           | 2161              |
+| 0.4       | 0.856    | 0.472     | 0.269  | 0.342 | 2128            | 5170            | 1899           | 4027              |
