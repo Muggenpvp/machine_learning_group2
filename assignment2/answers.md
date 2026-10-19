@@ -30,7 +30,7 @@ So looking only at the numbers in the CSV is not enough. The same kind of number
 - *We cannot conclude* which one comes first, or that one causes another.
 
 **3. Does BMI differ between the classes?**
-- *Evidence:* the BMI histogram and the table below. The share with diabetes rises from about 6% for BMI under 25 to 34% for BMI over 40.
+- *Evidence:* the BMI histogram and the BMI table in the notebook. The share with diabetes rises from about 6% for BMI under 25 to 34% for BMI over 40.
 - *Conclusion:* higher BMI is associated with diabetes.
 
 **4. Does the diabetes share change with age?**
