@@ -95,3 +95,11 @@ The model, its predicted probabilities, and TEST all stay the same. Only the cut
 |-----------|----------|-----------|--------|-------|-----------------|-----------------|----------------|-------------------|
 | 0.5       | 0.862    | 0.516     | 0.158  | 0.242 | 1045            | 5953            | 1116           | 2161              |
 | 0.4       | 0.856    | 0.472     | 0.269  | 0.342 | 2128            | 5170            | 1899           | 4027              |
+
+# G1
+
+The work was done done by all of the group members discussing the question, and finding solutions together.
+
+# G2
+
+We made sure that everyone understood the complete solution by working on most things together.
