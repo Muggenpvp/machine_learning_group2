@@ -64,6 +64,29 @@ Changing the threshold from 0.5 to 0.4 noticeably improved the results. Lowering
 
 # Q7
 
+## What we learned from the EDA
+
+- The target is imbalanced: only 13.9% of the people are class 1, so accuracy alone is misleading.
+- `GenHlth`, `Age`, `BMI`, `HighBP`, `HighChol` and `DiffWalk` show the clearest differences between the classes. For example, the diabetes share rises from 2.5% (excellent health) to 38% (poor health), and from about 6% (BMI below 25) to 34% (BMI above 40).
+- `Sex`, `AnyHealthcare`, `NoDocbcCost` and `Smoker` show only small differences.
+- Some results are surprising (heavy alcohol use and `CholCheck`) and probably reflect other differences between the groups, not a protective effect.
+
+## What we learned from Logistic Regression
+
+- The accuracy is 0.862, which is almost the same as the 0.861 we would get by always predicting class 0. So the model is not much better than this trivial baseline on accuracy.
+- With threshold 0.50 it finds only 16% of the real class 1 (recall 0.158), although about half of its alarms are correct (precision 0.516).
+- Lowering the threshold to 0.40 raises recall to 0.269 and lowers precision to 0.472, so it is a trade-off between false negatives and false positives. It is not a free improvement.
+- The accuracy hides the weak detection of class 1, so we need the confusion matrix, precision and recall.
+
+## Limitations
+
+1. **Association, not causation.** The EDA and the model show which features go together with diabetes in this data. They do not show that a feature causes diabetes, and we cannot say what would happen if someone changed, for example, their BMI.
+2. **Survey data.** The answers are self-reported (for example `GenHlth` and `PhysActivity`) and may be inaccurate. People with diabetes may also answer differently because of the diagnosis, so some features may partly be a consequence of diabetes.
+3. **Combined target.** Class 1 mixes prediabetes and diabetes, so the model cannot tell them apart.
+4. **Simple model and simple representation.** Logistic Regression is a linear model, and we use the ordered codes as numbers with equal steps. The imbalance is not handled (no class weights), which is one reason for the low recall.
+5. **One split and a fixed threshold choice.** We evaluated on a single TEST set and compared only two thresholds, so we do not know how stable the results are. We also did not choose the threshold with the medical costs of the errors in mind.
+6. **Duplicate rows were kept**, as the assignment says, so we cannot be sure whether some identical rows are the same person.
+
 # Threshold comparison table
 
 | Threshold | Accuracy | Precision | Recall | F1    | False positives | False negatives | True positives | Predicted class 1 |
