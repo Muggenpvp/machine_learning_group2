@@ -100,6 +100,7 @@ False positives went up (1,045 to 5 2,128) and false negatives went down (5,953 
 
 # G1
 
+We split the group into two pairs. One pair did steps 1 to 4, the second pair did steps 5 to 8. Later we gathered and went through the questions together.
 The work was done done by all of the group members discussing the questions, and finding solutions together.
 
 # G2
