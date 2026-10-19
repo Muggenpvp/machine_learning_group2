@@ -62,6 +62,8 @@ The main cause of the problem is the class imbalance combined with the default t
 
 Lowering the threshold to 0.40 flags more people. Recall goes up (0.269) and precision goes down (0.472). In a health setting, missing someone with diabetes (an FN) is usually worse than a false alarm (an FP), so recall is often the more important metric here.
 
+The model, its predicted probabilities, and TEST all stay the same. Only the cut-off that turns a probability into Class O or 1 changes.
+
 # Q7
 
 ## What we learned from the EDA
