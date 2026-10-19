@@ -52,7 +52,7 @@ perform better during testing than it would in production.
 
 False positives in this case mean that someone who is not diabetic is marked as being diabetic. A false negative means that a person who is diabetic is marked as not diabetic. For this type of disease classification where it can be verified by a more accurate test later, false positives are generally preferred to false negatives.
 
-Precision is 0.516 with our model, meaning the model was correct in ~52% of positive classifications. In other words, the rate of false positives is 48%.
+Precision is 0.516 with our model, meaning the model was correct in ~52% of positive classifications. In other words, the rate of people who were predicted to have diabetes who are false alarms is 48%.
 
 The recall value with our model using the default threshold is 0.158, meaning that the model missed ~84% of the actual diabetes cases.
 
