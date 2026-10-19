@@ -64,7 +64,7 @@ Lowering the threshold to 0.40 flags more people. Recall goes up (0.269) and pre
 
 The model, its predicted probabilities, and TEST all stay the same. Only the cut-off that turns a probability into Class 0 or 1 changes.
 
-False positives went up (1,045 to 5 2,128) and false negatives went down (5,953 to 5,170).
+False positives went up (1,045 to 2,128) and false negatives went down (5,953 to 5,170).
 
 # Q7
 
