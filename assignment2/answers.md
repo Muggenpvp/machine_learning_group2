@@ -98,7 +98,7 @@ The model, its predicted probabilities, and TEST all stay the same. Only the cut
 
 # G1
 
-The work was done done by all of the group members discussing the question, and finding solutions together.
+The work was done done by all of the group members discussing the questions, and finding solutions together.
 
 # G2
 
