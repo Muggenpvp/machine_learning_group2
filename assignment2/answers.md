@@ -60,7 +60,7 @@ The main cause of the problem is the class imbalance combined with the default t
 
 # Q6
 
-Changing the threshold from 0.5 to 0.4 noticeably improved the results.
+Changing the threshold from 0.5 to 0.4 noticeably improved the results. Lowering the threshold to 0.40 flags more people. Recall goes up (0.269) and precision goes down (0.472). In a health setting, missing someone with diabetes (an FN) is usually worse than a false alarm (an FP), so recall is often the more important metric here.
 
 # Q7
 
